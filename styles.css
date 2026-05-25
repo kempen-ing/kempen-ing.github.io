@@ -217,6 +217,16 @@ address {
     padding: 1.5rem 0;
 }
 
+
+@media (prefers-color-scheme: dark) {
+    .gih-logo {
+        background-color: rgba(255, 255, 255, 0.85); /* Ein helles, leicht transparentes Grau/Weiß */
+        padding: 10px;                             /* Gibt dem Logo etwas Luft zum Rand */
+        border-radius: 8px;                        /* Rundet die Ecken des grauen Kastens schön ab */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ein dezenter Schatten, damit es edel aussieht */
+    }
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .navbar-brand {
