@@ -221,7 +221,7 @@ address {
 @media (prefers-color-scheme: dark) {
     @media (prefers-color-scheme: dark) {
     .gih-logo {
-       filter: invert(1) !important;
+       /*filter: invert(1) !important;*/
     }
 }
 }
