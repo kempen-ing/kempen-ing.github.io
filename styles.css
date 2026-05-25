@@ -221,12 +221,7 @@ address {
 @media (prefers-color-scheme: dark) {
     @media (prefers-color-scheme: dark) {
     .gih-logo {
-        /* Trick: Ein Farbverlauf von hellem Grau zu hellem Grau wird vom Darkmode nicht überschrieben */
-        background-image: linear-gradient(to bottom, #e0e0e0, #e0e0e0) !important;
-
-        padding: 15px !important;      /* Gibt der schwarzen Schrift genug hellen Raum zum Rand */
-        border-radius: 6px !important;  /* Rundet die Ecken des grauen Kastens schön ab */
-        display: inline-block;          /* Sorgt dafür, dass der Kasten das Logo sauber umschließt */
+       filter: invert(1) !important;
     }
 }
 }
