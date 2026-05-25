@@ -219,12 +219,16 @@ address {
 
 
 @media (prefers-color-scheme: dark) {
+    @media (prefers-color-scheme: dark) {
     .gih-logo {
-        background-color: rgba(255, 255, 255, 0.85); /* Ein helles, leicht transparentes Grau/Weiß */
-        padding: 10px;                             /* Gibt dem Logo etwas Luft zum Rand */
-        border-radius: 8px;                        /* Rundet die Ecken des grauen Kastens schön ab */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ein dezenter Schatten, damit es edel aussieht */
+        /* Trick: Ein Farbverlauf von hellem Grau zu hellem Grau wird vom Darkmode nicht überschrieben */
+        background-image: linear-gradient(to bottom, #e0e0e0, #e0e0e0) !important;
+
+        padding: 15px !important;      /* Gibt der schwarzen Schrift genug hellen Raum zum Rand */
+        border-radius: 6px !important;  /* Rundet die Ecken des grauen Kastens schön ab */
+        display: inline-block;          /* Sorgt dafür, dass der Kasten das Logo sauber umschließt */
     }
+}
 }
 
 /* Mobile Responsive */
@@ -265,6 +269,12 @@ address {
 
     .content-text h3 {
         font-size: 1.25rem;
+    }
+
+    .contact-info {
+        flex-direction: column;    /* Das zaubert Text und Logo untereinander */
+        text-align: center;        /* Zentriert die Kontaktdaten schön auf dem Handy */
+        gap: 30px;                 /* Abstand zwischen dem Text und dem Logo darunter */
     }
 }
 
