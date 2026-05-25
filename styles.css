@@ -134,7 +134,7 @@ body {
     font-size: 2.25rem;
     text-align: center;
     text-transform: uppercase;
-    color: var(--secondary-color);
+    color: var(--text-dark);
     margin-bottom: 3rem;
     font-weight: 700;
 }
@@ -157,25 +157,10 @@ body {
 }
 
 .services-list {
-    list-style: none;
-    padding: 0;
-    margin: 1.5rem 0;
+    list-style: disc;
+    padding-left: 2ch;
 }
 
-.services-list li {
-    margin-bottom: 1.5rem;
-    padding-left: 2rem;
-    position: relative;
-}
-
-.services-list li::before {
-    content: "•";
-    color: var(--primary-color);
-    font-size: 1.5rem;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
 
 .cta-text {
     font-weight: 700;
@@ -189,7 +174,16 @@ body {
 }
 
 .contact-info {
-    text-align: center;
+    display: flex;
+    justify-content: center;     /* Zentriert das Ganze auf dem Bildschirm */
+    align-items: center;         /* Richtet Text und Logo mittig aneinander aus */
+    gap: 50px;                   /* Abstand zwischen Text und Logo */
+}
+
+/* Das Logo braucht nur eine feste Größe, weil das Original riesig ist */
+.gih-logo {
+    width: 150px;
+    height: auto;
 }
 
 .contact-heading {
@@ -238,13 +232,6 @@ address {
         font-size: 0.875rem;
     }
 
-    .masthead {
-        padding: 100px 0 60px;
-    }
-
-    .masthead-avatar {
-        width: 180px;
-    }
 
     .masthead-heading {
         font-size: 2rem;
@@ -291,9 +278,5 @@ address {
 
     .masthead-heading {
         font-size: 1.75rem;
-    }
-
-    .masthead-avatar {
-        width: 150px;
     }
 }
