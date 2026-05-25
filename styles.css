@@ -40,7 +40,7 @@ body {
     background-color: var(--primary-color);
     padding: 1rem 0;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .container {
@@ -175,9 +175,9 @@ body {
 
 .contact-info {
     display: flex;
-    justify-content: center;     /* Zentriert das Ganze auf dem Bildschirm */
-    align-items: center;         /* Richtet Text und Logo mittig aneinander aus */
-    gap: 50px;                   /* Abstand zwischen Text und Logo */
+    justify-content: center; /* Zentriert das Ganze auf dem Bildschirm */
+    align-items: center; /* Richtet Text und Logo mittig aneinander aus */
+    gap: 50px; /* Abstand zwischen Text und Logo */
 }
 
 /* Das Logo braucht nur eine feste Größe, weil das Original riesig ist */
@@ -256,15 +256,6 @@ address {
     .content-text h3 {
         font-size: 1.25rem;
     }
-    .contact-info {
-        flex-direction: column;    /* Stapelt Text und Logo untereinander statt nebeneinander */
-        text-align: center;        /* Zentriert Ihre Kontaktdaten auf dem Handy */
-        gap: 30px;                 /* Angenehmer Abstand zwischen Text und Logo */
-    }
-
-    .gih-logo {
-        width: 120px;              /* Macht das Logo auf dem Smartphone etwas dezenter */
-    }
 }
 
 @media (max-width: 480px) {
@@ -288,4 +279,5 @@ address {
     .masthead-heading {
         font-size: 1.75rem;
     }
+
 }
